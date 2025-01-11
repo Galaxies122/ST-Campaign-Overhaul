@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Talents>
+  <Talent identifier="xenoxptalent" name="XP Talent">
+    <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="5,2" sheetelementsize="128,128"/>
+    <Description tag="talentdescription.xenoxptalent">
+      <Replace tag="[seconds]" value="2" color="gui.green"/>
+    </Description>
+    <!-- Give the player the rewards when anything is killed -->
+    <AbilityGroupEffect abilityeffecttype="OnKillCharacter">
+      <Abilities>
+        <CharacterAbilityGiveExperience amount="100"/>
+      </Abilities>
+    </AbilityGroupEffect>
+  </Talent>
+
+
+
+
+
+
+  <!-- Apprenticeship talents -->
+  <Talent identifier="apprenticeship_melee" nameidentifier="jobname.melee">
+    <Icon texture="%ModDir%/UI/MeleeIcon.png" sourcerect="0,0,128,128" origin="0.5,0.5" />
+    <Description tag="talentdescription.apprenticeshipjob">
+      <Replace tag="[job]" value="jobname.melee" color="0.0,0.62,0.42"/>
+    </Description>
+    <Description tag="talentdescription.additionalskill">
+      <Replace tag="[amount]" value="20" color="gui.green"/>
+      <Replace tag="[stattype]" value="stattypenames.mechanicalskillbonus" color="gui.green"/>
+    </Description>
+    <AbilityGroupEffect abilityeffecttype="None">
+      <Abilities>
+        <CharacterAbilityGivePermanentStat stattype="Apprenticeship" statidentifier="melee" value="1" />
+        <CharacterAbilityGiveStat stattype="MechanicalSkillBonus" value="5"/>
+        <CharacterAbilityGiveStat stattype="MechanicalSkillGainSpeed" value="1.0"/>
+      </Abilities>
+    </AbilityGroupEffect>
+  </Talent>
+
+  <Talent identifier="apprenticeship_light" nameidentifier="jobname.light">
+    <Icon texture="%ModDir%/UI/LightIcon.png" sourcerect="0,0,128,128" origin="0.5,0.5" />
+    <Description tag="talentdescription.apprenticeshipjob">
+      <Replace tag="[job]" value="jobname.light" color="1.0,0.75,0.0"/>
+    </Description>
+    <Description tag="talentdescription.additionalskill">
+      <Replace tag="[amount]" value="20" color="gui.green"/>
+      <Replace tag="[stattype]" value="stattypenames.electricalskillbonus" color="gui.green"/>
+    </Description>
+    <AbilityGroupEffect abilityeffecttype="None">
+      <Abilities>
+        <CharacterAbilityGivePermanentStat stattype="Apprenticeship" statidentifier="light" value="1" />
+        <CharacterAbilityGiveStat stattype="ElectricalSkillBonus" value="10"/>
+        <CharacterAbilityGiveStat stattype="ElectricalSkillGainSpeed" value="1.0"/>
+      </Abilities>
+    </AbilityGroupEffect>
+  </Talent>
+
+  <Talent identifier="apprenticeship_heavy" nameidentifier="jobname.heavy">
+    <Icon texture="%ModDir%/UI/HeavyIcon.png" sourcerect="0,0,128,128" origin="0.5,0.5" />
+    <Description tag="talentdescription.apprenticeshipjob">
+      <Replace tag="[job]" value="jobname.heavy" color="0.81,0.06,0.13"/>
+    </Description>
+    <Description tag="talentdescription.additionalskill">
+      <Replace tag="[amount]" value="20" color="gui.green"/>
+      <Replace tag="[stattype]" value="stattypenames.weaponsskillbonus" color="gui.green"/>
+    </Description>
+    <AbilityGroupEffect abilityeffecttype="None">
+      <Abilities>
+        <CharacterAbilityGivePermanentStat stattype="Apprenticeship" statidentifier="heavy" value="1" />
+        <CharacterAbilityGiveStat stattype="WeaponsSkillBonus" value="20"/>
+        <CharacterAbilityGiveStat stattype="WeaponsSkillGainSpeed" value="1.0"/>
+      </Abilities>
+    </AbilityGroupEffect>
+  </Talent>
+
+  <Talent identifier="apprenticeship_support" nameidentifier="jobname.support">
+    <Icon texture="%ModDir%/UI/SupportIcon.png" sourcerect="0,0,128,128" origin="0.5,0.5" />
+    <Description tag="talentdescription.apprenticeshipjob">
+      <Replace tag="[job]" value="jobname.support" color="0.36,0.54,0.66"/>
+    </Description>
+    <Description tag="talentdescription.additionalskill">
+      <Replace tag="[amount]" value="20" color="gui.green"/>
+      <Replace tag="[stattype]" value="stattypenames.medicalskillbonus" color="gui.green"/>
+    </Description>
+    <AbilityGroupEffect abilityeffecttype="None">
+      <Abilities>
+        <CharacterAbilityGivePermanentStat stattype="Apprenticeship" statidentifier="support" value="1" />
+        <CharacterAbilityGiveStat stattype="MedicalSkillBonus" value="10"/>
+        <CharacterAbilityGiveStat stattype="MedicalSkillGainSpeed" value="1.0"/>
+      </Abilities>
+    </AbilityGroupEffect>
+  </Talent>
+
+  <Talent identifier="apprenticeship_officer" nameidentifier="jobname.officer">
+    <Icon texture="%ModDir%/UI/OfficerIcon.png" sourcerect="0,0,128,128" origin="0.5,0.5" />
+    <Description tag="talentdescription.apprenticeshipjob">
+      <Replace tag="[job]" value="jobname.officer" color="0.76,0.6,0.42"/>
+    </Description>
+    <Description tag="talentdescription.additionalskill">
+      <Replace tag="[amount]" value="20" color="gui.green"/>
+      <Replace tag="[stattype]" value="stattypenames.helmskillbonus" color="gui.green"/>
+    </Description>
+    <AbilityGroupEffect abilityeffecttype="None">
+      <Abilities>
+        <CharacterAbilityGivePermanentStat stattype="Apprenticeship" statidentifier="officer" value="1" />
+        <CharacterAbilityGiveStat stattype="HelmSkillBonus" value="10"/>
+        <CharacterAbilityGiveStat stattype="HelmSkillGainSpeed" value="1.0"/>
+      </Abilities>
+    </AbilityGroupEffect>
+  </Talent>
+
+
+
+  <!-- Cultist talents -->
+
+  <Talent identifier="unseen" name="Unseen...">
+    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="6,4" sheetelementsize="128,128"/>
+    <Description tag="talentdescription.unseen">
+      <Replace tag="[seconds]" value="2" color="gui.green"/>
+    </Description>
+    <AbilityGroupInterval >
+      <Abilities>
+        <CharacterAbilityModifyFlag flagtype="IgnoredByEnemyAI"/>
+      </Abilities>
+    </AbilityGroupInterval>
+  </Talent>
+
+
+
+</Talents>

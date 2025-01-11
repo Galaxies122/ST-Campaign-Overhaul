@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="English" nowhitespace="false" translatedname="English">
+
+<!--Equipment-->
+  <entityname.mi_heavy_helmet_1>MI Helmet 1</entityname.mi_heavy_helmet_1>
+  <entitydescription.mi_heavy_helmet_1>A heavy-duty helmet for the Mobile Infantry.</entitydescription.mi_heavy_helmet_1>
+  <entityname.mi_heavy_helmet_2>MI Helmet 2</entityname.mi_heavy_helmet_2>
+  <entitydescription.mi_heavy_helmet_2>A heavy-duty helmet for the Mobile Infantry.</entitydescription.mi_heavy_helmet_2>
+
+<!--Weapons-->
+  <entityname.morita_mk2>Morita MK-2</entityname.morita_mk2>
+  <entitydescription.morita_mk2>A high-powered rifle. Utilizes 5.56x45mm rounds. Insert a Morita magazine for proper usage.</entitydescription.morita_mk2>
+
+
+</infotexts>

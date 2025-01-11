@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Starship Troopers - Campaign Overhaul" modversion="1.0.2" corepackage="True" gameversion="1.7.7.0">
+
+  <!--Ammo, Weaponry, & Armor -->
+  <Item file="%ModDir%/Weapons/Ammo/ammunition.xml" />
+  <Item file="%ModDir%/Weapons/mi_moritas.xml" />
+  <Item file="%ModDir%/Equipment/mi_armor.xml" />
+
+
+  <!--Afflictions-->
+  <Affliction file="%ModDir%/Afflictions/afflictions.xml" />
+
+
+
+  <!--Campaign-->
+  <Factions file="%ModDir%/Campaign/factions.xml" />
+  <LocationTypes file="%ModDir%/Campaign/Map/locationtypes.xml" />
+  <MapGenerationParameters file="%ModDir%/Campaign/Map/MapGenerationParameters.xml" />
+
+
+  <!--NPCs-->
+  <NPCSets file="%ModDir%/NPCs/outpostnpcs.xml" />
+  <NPCSets file="%ModDir%/NPCs/CustomNPCs.xml" />
+  <NPCConversations file="%ModDir%/NPCs/Conversations.xml" />
+
+  <!--Talents-->
+  <Talents file="%ModDir%/NPCs/Talents.xml" />
+  <Talents file="%ModDir%/Talents/Talents.xml" />
+  <TalentTrees file="%ModDir%/Talents/TalentTrees.xml" />
+
+
+  <!--Characters-->
+  <Character file="%ModDir%/Characters/Warriorbug/Warriorbug.xml" />
+
+
+  <!--Misc-->
+  <Text file="%ModDir%/english.xml" />
+  <Sounds file="%ModDir%/Sounds/sounds.xml" />
+
+</contentpackage>
