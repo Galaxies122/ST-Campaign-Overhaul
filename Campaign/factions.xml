@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Factions>
+  <Faction identifier="mobileinfantry" initialreputation="45" minreputation="-100" maxreputation="100" menuorder="0" controlledoutpostpercentage="5" opposingfaction="arachnids">
+    <Icon name="MIIcon" texture="%ModDir%/UI/mi_logos.png" sourcerect="402,523,96,113" color="58,165,121,255"/>
+    <IconSmall name="MIIconSmall" texture="%ModDir%/UI/mi_logos.png" sourcerect="13,35,108,82"/>
+    <Portrait name="MIPortrait" texture="Content/UI/Server/PlaystyleRampage.png" sourcerect="0,120,360,360" color="58,165,121,255"/>
+    <Hireable npcsetidentifier="outpostnpcs1" npcidentifier="hireablehuskcultist" minreputation="20" />
+    <Hireable npcsetidentifier="outpostnpcs1" npcidentifier="hireablehuskcultistveteran" minreputation="50" />
+    <AutomaticMission leveltype="LocationConnection" missiontag="arachnidattack" minreputation="-100" maxreputation="-50" MaxDistanceFromFactionOutpost="3" DisallowBetweenOtherFactionOutposts="true" minprobability="0.2" maxprobability="0.01"/>
+  </Faction>
+  <Faction identifier="unitedcitizenfederation" initialreputation="15" minreputation="-100" maxreputation="100" menuorder="1" controlledoutpostpercentage="20" opposingfaction="skinnies">
+    <Icon name="UCFIcon" texture="%ModDir%/UI/ucf_logos.png" sourcerect="8,63,272,288" color="215,156,85,255"/>
+    <IconSmall name="UCFSmall" texture="%ModDir%/UI/ucf_logos.png" sourcerect="273,4,345,70"/>
+    <Portrait name="UCFPortrait" texture="Content/UI/Server/PlaystyleCasual.png" sourcerect="0,0,1920,768" color="215,156,85,255"/>
+    <Hireable npcsetidentifier="outpostnpcs1" npcidentifier="hireableseparatistsecurityofficer" minreputation="20"/>
+    <Hireable npcsetidentifier="outpostnpcs1" npcidentifier="hireableseparatistengineer" minreputation="20" />
+    <Hireable npcsetidentifier="outpostnpcs1" npcidentifier="hireableseparatistmechanic" minreputation="20" />
+    <Hireable npcsetidentifier="outpostnpcs1" npcidentifier="hireableseparatistmedic" minreputation="20" />
+    <Hireable npcsetidentifier="outpostnpcs1" npcidentifier="hireableseparatistsecurityofficerveteran" minreputation="50"/>
+    <Hireable npcsetidentifier="outpostnpcs1" npcidentifier="hireableseparatistengineerveteran" minreputation="50" />
+    <Hireable npcsetidentifier="outpostnpcs1" npcidentifier="hireableseparatistmechanicveteran" minreputation="50" />
+    <Hireable npcsetidentifier="outpostnpcs1" npcidentifier="hireableseparatistmedicveteran" minreputation="50" />
+    <AutomaticMission leveltype="LocationConnection" missiontag="arachnidattack" minreputation="-100" maxreputation="-50" MaxDistanceFromFactionOutpost="3" DisallowBetweenOtherFactionOutposts="true" minprobability="0.2" maxprobability="0.01"/>
+  </Faction>
+  <Faction identifier="arachnids" initialreputation="-100" minreputation="-100" maxreputation="100" menuorder="2" controlledoutpostpercentage="75" startoutpost="false" opposingfaction="mobileinfantry">
+    <Icon name="ArachnidIcon" texture="%ModDir%/UI/arachnid_logos.png" sourcerect="0,0,360,360"/>
+    <Portrait name="ArachnidPortrait" texture="Content/UI/Server/PlaystyleSerious.png" sourcerect="0,0,1920,768" />
+  </Faction>
+  <Faction identifier="skinnies" initialreputation="-5" minreputation="-100" maxreputation="100" menuorder="3" secondarycontrolledoutpostpercentage="10" opposingfaction="unitedcitizenfederation">
+    <Icon name="SkinniesIcon" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="0,523,118,113" color="206,62,62,255"/>
+    <Portrait name="SkinniesPortrait" texture="Content/UI/Server/ClownFaction.png" sourcerect="0,0,1920,768" color="206,62,62,255"/>
+    <Hireable npcsetidentifier="outpostnpcs1" npcidentifier="hireableclown" minreputation="20" />
+    <Hireable npcsetidentifier="outpostnpcs1" npcidentifier="hireableclownveteran" minreputation="50" />
+    <AutomaticMission leveltype="LocationConnection" missiontag="arachnid_attack" minreputation="-100" maxreputation="-50" MaxDistanceFromFactionOutpost="3" DisallowBetweenOtherFactionOutposts="true" minprobability="0.2" maxprobability="0.01"/>
+  </Faction>
+</Factions>
